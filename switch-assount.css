@@ -95,7 +95,7 @@ html {
   margin-bottom: 0.8rem;
   text-align: center;
   background-color: #52C2C6;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, .2)
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 6px rgba(0, 0, 0, .2);
 }
 #addstudent span {
   font-size: 0.9rem;
