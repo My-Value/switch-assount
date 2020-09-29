@@ -1,0 +1,102 @@
+html {
+  font-size: 5.33333333vw;
+}
+.wrap {
+  width: 18.75rem;
+  height: 35rem;
+  background-image: url(switchAccount-background.png);
+}
+#showdiv {
+  display: none;
+}
+.topbar {
+  width: 18.75rem;
+  height: 17.525rem;
+  background-image: url(switchAccount-banner.png);
+  background-size: 100% 100% ;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+#hidediv {
+  margin: auto;
+  text-align: center;
+  margin-top: 45%;
+  font-size: 0.75rem;
+}
+.user {
+  width: 100%;
+  margin: 1.375rem 0;
+  overflow: hidden;
+  background-image: url(user-color-bg.png);
+  background-size: 100% 100%;
+}
+.user img {
+  width: 2.95rem;
+  margin: 0.5rem 0.6rem;
+  float: left;
+}
+.user-msg {
+  float: left;
+  margin-top: 0.45rem;
+}
+.user-msg p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+.user-msg span {
+  font-size: 0.6rem;
+  color: #abc1c9;
+}
+.user-two {
+  width: 100%;
+  margin: 1.375rem 0;
+  overflow: hidden;
+  background-image: url(user-color-bg.png);
+  background-size: 100% 100%;
+}
+.user-two img {
+  width: 2.95rem;
+  margin: 0.5rem 0.6rem;
+  float: left;
+}
+.user-msg {
+  float: left;
+  margin-top: 0.45rem;
+}
+.user-msg p {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+.user-msg span {
+  font-size: 0.6rem;
+  color: #abc1c9;
+}
+#user-one-right {
+  display: none;
+}
+.user:hover #user-one-right {
+  display: block;
+}
+#user-one-right {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-image: url(img/yes.png);
+  float: right;
+  background-size: 100% 100%;
+  margin: 1.2rem 0.875rem 1.2rem 0;
+}
+#addstudent {
+  margin: 4rem 3.7rem 0 3.7rem;
+  padding: 0.4rem 2rem;
+  color: #fff;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  background-color: #52C2C6;
+}
+#addstudent span {
+  font-size: 0.9rem;
+  font-weight: bold;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生管理</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="switch-assount.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="topbar">
+            <div id="hidediv">
+                <p style="font-weight: bold; font-size: 22px;">暂无信息</p>
+                <br/>
+                <p style="padding-bottom:5px;">您还未绑定学生</p>
+                <p>请点击下方 “新增账号” 绑定学生信息</p>
+            </div>
+            <div id="showdiv">
+                <div class="user user-one">
+                    <div class="user-one-left">
+                        <img src="switchAccount-heard-img.png" alt="">
+                        <div class="user-msg">
+                            <p>赵珂</p>
+                        <span>七年级六班</span>
+                        </div>
+                    </div>
+                    <!-- <div id="user-one-right"></div> -->
+                </div>
+    
+                <div class=" user user-two">
+                    <div class="user-one-left">
+                        <img src="switchAccount-heard-img.png" alt="">
+                        <div class="user-msg">
+                            <p>谢士举</p>
+                        <span>七年级六班</span>
+                        </div>
+                    </div>
+                    <div id="user-one-right"></div>
+                </div>
+                <div class=" user user-three">
+                    <div class="user-one-left">
+                        <img src="switchAccount-heard-img.png" alt="">
+                        <div class="user-msg">
+                            <p>王梦梅</p>
+                        <span>八年级四班</span>
+                        </div>
+                    </div>
+                    <!-- <div id="user-one-right"></div> -->
+    
+                </div>
+    
+            </div>
+           
+        </div>
+
+        <div id="addstudent">
+            <!-- <img src="/public/static/img/add.png" alt=""> -->
+            <span>新增账号</span>
+        </div
+    </div>
+    <script>
+        
+document.getElementById("addstudent").addEventListener("click",function(){
+  window.location.href = "../index.html";
+});
+
+document.getElementById("addstudent").addEventListener("click",function(){
+  window.location.href = "../index.html";
+});
+var users=document.getElementsByClassName("user")
+console.log(users);
+console.log(111);
+    </script>
+</body>
+</html>
