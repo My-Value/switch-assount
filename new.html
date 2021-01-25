@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生轨迹</title>
+    <!-- <link rel="stylesheet" href="/static/css/redstudenttar.css"> -->
+    <!-- <link rel="stylesheet" href="/public/static/css/commonlivedemo.css"> -->
+    <link rel="stylesheet" href="greenstudenttar copy.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="wrap">
+            <div class="topbar">
+                <div class="topbar-left">
+                    <div class="titles">
+                        <!-- <img src="/public/static/img2/userimage.png" alt="">
+                        <div class="student-msg">
+                            <p id="syudentname">{$first['name']}</p>
+                            <span id="classroom">{$first['classname']}</span>
+                        </div> -->
+                        <ul>
+                            <li>语文</li>
+                            <li>数学</li>
+                            <li>英语</li>
+                            <li>道德与法治</li>
+                            <li>安全</li>
+                            <li>政治</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div id="choose">
+                    <select id="pid" onchange="gradeChange()">
+                <option selected:disabled style="display: none;">切换学生</option>
+                {if(!empty($studentList))}
+                {foreach $studentList as $k=>$v}
+
+                <option value="{$v['stu_num']}">{$v['name']}</option>
+
+                {/foreach}
+                {else /}
+                {/if}
+            </select>
+                </div> -->
+            </div>
+            <!-- 中间的部分 -->
+            <div class="banner">
+                <!-- 课程 -->
+                <div class="content">
+                    <div class="img"><img src="/public/static/img2/class1.jpg" alt=""></div>
+                    <div class="message">
+                        <div class="classname">课程名称：安全消防演讲</div>
+                        <div class="time">时间：2021-1-24</div>
+                        <div class="teacher">主讲老师：张琳老师</div>
+                        <div class="address">
+                            <a href="http://zksjytyj.xylinkedu.com/#/uokoResource/detail?Y291cnNlSWQlM0Q1MzA2ODU5MzIyNjU3OTk2ODAlMjZoaWRkZW5BbGxDcnVtYiUzRHRydWU=">
+                                立即观看
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 课程 -->
+                <div class="content">
+                    <div class="img"><img src="/public/static/img2/class1.jpg" alt=""></div>
+                    <div class="message">
+                        <div class="classname">课程名称：安全消防演讲</div>
+                        <div class="time">时间：2021-1-24</div>
+                        <div class="teacher">主讲老师：张琳老师</div>
+                        <div class="address">
+                            <a href="http://zksjytyj.xylinkedu.com/#/uokoResource/detail?Y291cnNlSWQlM0Q1MzA2ODU5MzIyNjU3OTk2ODAlMjZoaWRkZW5BbGxDcnVtYiUzRHRydWU=">
+                                立即观看
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 课程 -->
+                <div class="content">
+                    <div class="img"><img src="/public/static/img2/class1.jpg" alt=""></div>
+                    <div class="message">
+                        <div class="classname">课程名称：安全消防演讲</div>
+                        <div class="time">时间：2021-1-24</div>
+                        <div class="teacher">主讲老师：张琳老师</div>
+                        <div class="address">
+                            <a href="http://zksjytyj.xylinkedu.com/#/uokoResource/detail?Y291cnNlSWQlM0Q1MzA2ODU5MzIyNjU3OTk2ODAlMjZoaWRkZW5BbGxDcnVtYiUzRHRydWU=">
+                                立即观看
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 课程 -->
+                <div class="content">
+                    <div class="img"><img src="/public/static/img2/class1.jpg" alt=""></div>
+                    <div class="message">
+                        <div class="classname">课程名称：安全消防演讲</div>
+                        <div class="time">时间：2021-1-24</div>
+                        <div class="teacher">主讲老师：张琳老师</div>
+                        <div class="address">
+                            <a href="http://zksjytyj.xylinkedu.com/#/uokoResource/detail?Y291cnNlSWQlM0Q1MzA2ODU5MzIyNjU3OTk2ODAlMjZoaWRkZW5BbGxDcnVtYiUzRHRydWU=">
+                                立即观看
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 课程 -->
+                <div class="content">
+                    <div class="img"><img src="/public/static/img2/class1.jpg" alt=""></div>
+                    <div class="message">
+                        <div class="classname">课程名称：安全消防演讲</div>
+                        <div class="time">时间：2021-1-24</div>
+                        <div class="teacher">主讲老师：张琳老师</div>
+                        <div class="address">
+                            <a href="http://zksjytyj.xylinkedu.com/#/uokoResource/detail?Y291cnNlSWQlM0Q1MzA2ODU5MzIyNjU3OTk2ODAlMjZoaWRkZW5BbGxDcnVtYiUzRHRydWU=">
+                                立即观看
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/static/js/jquery-3.5.1.js"></script>
+        <script>
+            function gradeChange() {
+                var  name = document.getElementById("syudentname").innerHTML;
+                var  className = document.getElementById("classroom");
+                var myselect = document.getElementById("pid");
+                var index = myselect.selectedIndex;
+                // selectedIndex代表的是你所选中项的index
+                var value = myselect.options[index].value;
+                $.ajax({
+                    type: "POST",
+                    dataType: "json",
+                    url: "studentinfo",
+                    data: {
+                        stuNum: value,
+                        stuname: name
+                    },
+                    success: function(msg) {
+                        name.innerHTML = msg['name'];
+                        className.innerHTML = msg.classname;
+                    },
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        console.log(XMLHttpRequest.status);
+                        console.log(XMLHttpRequest.readyState);
+                        console.log(textStatus);
+                    }
+                });
+            }
+        </script>
+    </body>
+
+</html>

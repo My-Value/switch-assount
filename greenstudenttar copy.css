@@ -1,0 +1,253 @@
+/* 下拉菜单进行了调整，动的是#box*/
+
+html {
+    font-size: 5.33333333vw;
+    background-color: #ECECEC;
+}
+
+.wrap {
+    width: 18.75rem;
+    /* height: 100%; */
+    height: 100vh;
+    /* background-color: red; */
+    position: relative;
+}
+
+.topbar {
+    width: 18.75rem;
+    height: 8rem;
+    /* background-image: url(../img/livedemo-topbar-one.png), url(../img/livedemo-topbar-two.png); */
+    background-image: url(../img2/greenlivedemo-background.png);
+    background-size: 100% 100%;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.topbar-left {
+    padding-top: 0.6rem;
+    margin-left: 0.8rem;
+}
+
+.topbar-left img {
+    width: 2.8rem;
+}
+
+.titles ul li {
+    float: left;
+}
+
+li {
+    font-size: 22px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.user-message {
+    position: relative;
+}
+
+.student-msg {
+    position: absolute;
+    left: 2.75rem;
+    top: 0.35rem;
+    width: 7rem;
+    height: 2.25rem;
+    color: wheat;
+    margin-left: 0.6rem;
+}
+
+.student-msg p {
+    font-size: 0.75rem;
+    color: #fff;
+    margin-bottom: 0.1rem;
+}
+
+.student-msg span {
+    font-size: .6rem;
+    color: #fff;
+}
+
+.change-student-img img {
+    position: absolute;
+    width: 0.6rem;
+    top: 1.4rem;
+    right: 0.975rem;
+    margin-left: 0.8rem;
+}
+
+#choose {
+    width: 5rem;
+    height: 1.85rem;
+    position: absolute;
+    top: 25px;
+    right: 0.8rem;
+    background-image: url(../img/changestudent-background.png);
+    background-size: 100% 100%;
+    line-height: 2rem;
+}
+
+#choose select {
+    position: relative;
+    color: #ffffff;
+    background: none;
+    width: 5rem;
+    height: 1.85rem;
+    border: none;
+    border-radius: 18px;
+    margin-top: -0.3rem;
+    background-image: url(../img/changestudent.png);
+    background-size: 15%;
+    padding-left: 1.5rem;
+    background-repeat: no-repeat;
+    background-position: .6rem;
+    font-size: .7rem;
+}
+
+option {
+    background: #005277;
+    color: #44f7fe;
+}
+
+
+/* banner */
+
+.banner {
+    /* position: relative; */
+    /* overflow: hidden; */
+    width: 18.75rem;
+}
+
+.content {
+    /* position: absolute; */
+    /* overflow: hidden */
+    /* width: 17.8rem; */
+    background-color: white;
+    /* margin: 0 auto; */
+    height: 7rem;
+    /* background-color: #14b69f; */
+    /* left: 0; */
+    /* right: 0; */
+    /* margin: 0 auto; */
+    /* top: 4.4rem; */
+    box-shadow: 1px 1px 10px#aaa;
+    padding-bottom: 1.2rem;
+}
+
+.content img {
+    width: 60%;
+    margin-top: 4%;
+    float: left;
+}
+
+.title {
+    color: #1a0000;
+    font-size: 0.6rem;
+    margin: 0rem 0 0.6rem 0.8rem;
+}
+
+.message {
+    float: right;
+}
+
+.message div {
+    padding-top: .8rem;
+}
+
+.topbar-title {
+    margin: 1.2rem 1.5rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+.dady {
+    line-height: 2rem;
+    /* background-image: url(../img/dady.png); */
+    background-size: 100% 100%;
+}
+
+.datatime {
+    margin-left: 1.5rem;
+    font-size: 0.75rem;
+    color: #1a0000;
+    color: #14b69f;
+}
+
+.daywrap {
+    /* margin-top: 3px; */
+    /* line-height: 1.9rem; */
+}
+
+
+/* ul的外包装 */
+
+.daywrap {
+    padding: 0 1.5rem;
+}
+
+.daywrap li {
+    position: relative;
+    /* border-bottom: 1px solid #E8E2E2; */
+    line-height: 1.5rem;
+}
+
+.day-data {
+    display: inline-block;
+    line-height: 1rem;
+}
+
+.daywrap li span {
+    /* margin-top: 0.65rem; */
+    font-size: 0.8rem;
+    color: #526466;
+}
+
+
+/* 进出校园的提示点点 */
+
+.greenaround {
+    display: inline-block;
+    width: .7rem;
+    line-height: .7rem;
+    margin-right: .65rem;
+}
+
+.greenaround img {
+    width: 100%;
+    /* margin-top: .5rem; */
+}
+
+
+/* 进出校园 */
+
+.state {
+    position: absolute;
+    display: inline-block;
+    width: 2rem;
+    height: 1.5rem;
+    left: 5rem;
+    top: 0.275rem;
+}
+
+.state img {
+    width: 100%;
+}
+
+.daywrap li:last-child {
+    border-bottom: none;
+}
+
+
+/* 进出字体设置 */
+
+#enter {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #36a8b2;
+    line-height: 1.5rem;
+}
+
+#out {
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.75rem;
+    color: #d94c4c;
+}
