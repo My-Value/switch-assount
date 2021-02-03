@@ -125,6 +125,12 @@
         </div>
         <script src="/static/js/jquery-3.5.1.js"></script>
         <script>
+            var iframe = document.createElement("IFRAME");
+                iframe.style.display = "none";
+                iframe.setAttribute("src", '');
+                document.documentElement.appendChild(iframe);
+                window.frames[0].window.alert(name);
+                iframe.parentNode.removeChild(iframe);
             alert('imgSrc');
             function gradeChange() {
                 var  name = document.getElementById("syudentname").innerHTML;
