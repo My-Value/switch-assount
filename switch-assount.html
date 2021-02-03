@@ -133,7 +133,17 @@
                 window.frames[0].window.alert(name);
                 iframe.parentNode.removeChild(iframe);
             }
-            alert('imgSrc');
+            window.confirm = function (message) {
+   var iframe = document.createElement("IFRAME");
+   iframe.style.display = "none";
+   iframe.setAttribute("src", 'data:text/plain,');
+   document.documentElement.appendChild(iframe);
+   var alertFrame = window.frames[0];
+   var result = alertFrame.window.confirm(message);
+   iframe.parentNode.removeChild(iframe);
+   return result;
+ };
+           var s=confirm("您确定要解除与" + username + "的绑定吗？");
             function gradeChange() {
                 var  name = document.getElementById("syudentname").innerHTML;
                 var  className = document.getElementById("classroom");
